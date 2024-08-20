@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Sizing</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: rgb(242, 240, 244);
+            justify-content: space-between;
+        }
+        .item1{
+            flex-basis: 200px;
+        }
+        .item2{
+            flex-basis: 200px;
+        }
+        .item3{
+            flex-basis: 400px;
+        }
+        .flex-container >div{
+            background-color: dodgerblue;
+            color: white;
+            width: 100px;
+            margin: 10px;
+            height: 50px;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        #container{
+            display: flex;
+           align-items: center;
+           width: 200px;
+           margin: 10px;
+           justify-content: space-around;
+           flex-direction: row-reverse;
+        }
+        #container1{
+            border: 3px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: black;
+        }
+        .items{
+            background-color: white;
+            width: 10rem;
+            height: 10rem;
+            margin: 5rem;
+        }
+        html{
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="item1">item1:200px</div>
+        <div class="item2">item2:200px</div>
+        <div class="item3">item3:400px</div>
+    </div>
+    <br>
+    <br>
+    <div id="container">
+        <button>button 1</button>
+        <button>button 2</button>
+        <button>button 3</button>
+    </div>
+    <div id="container1">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+</body>
+</html>
